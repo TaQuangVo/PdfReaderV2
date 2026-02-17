@@ -19,6 +19,9 @@ local.settings.json
 # Test files
 files/
 
+# Secrets
+CU.txt
+
 # OS
 .DS_Store
 Thumbs.db
