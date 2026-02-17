@@ -1,0 +1,522 @@
+{
+    "id": "a98f7fcb-f6b1-4b7b-9c1b-554329c4d878",
+    "status": "Succeeded",
+    "result": {
+      "analyzerId": "custompdfreader2",
+      "apiVersion": "2025-11-01",
+      "createdAt": "2026-02-05T15:11:22Z",
+      "stringEncoding": "codePoint",
+      "warnings": [],
+      "contents": [
+        {
+          "path": "input1",
+          "markdown": "<!-- PageHeader: SÄKRA -->\n\n\n# Fond- och aktiekonto (depå) - Flytt av tillgångar till Säkra VP\n\nNedan angiven kund ger fullmakt åt Säkra VP AB (\"Säkra VP AB\") eller den Säkra VP AB utser, att inhämta de upplysningar som krävs och vidta nödvändiga\nåtgärder för att genomföra uppdraget att flytta tillgångar från fond- och aktiekonto (\"depå\") i avlämnande depåinstitut till depå i Säkra VP AB.\n\nKund\n\nDepåhavarens namn\nStiftelsen Alfred Anderssons Familjefond\n\nOrg.nr / Personnummer (AÅMMDD-NNNN)\n839401-1251\n\nAvlämnande depåinstitut som tillgångar flyttas från\n\nNamn på avlämnande depåinstitut\nGarantum\n\nDepånummer hos avlämnande depåinstitut\n917138\n\nDepånummer hos Säkra VP AB som tillgångar flyttas till\n\nDepånummer\n51602287\n\nUppdraget avser\n\nFlytt av samtliga andelar i nedanstående fonder och/eller hela innehavet i nedanstående värdepapper, samt likvida medel på ovanstående depå\ntill Säkra VP AB.\n\nNamn på fond/värdepapper\nAktie-Ansvar Sverige B\n\nISIN\nSE0009439722\n\nHandelsvaluta\nSEK\n\nNamn på fond/värdepapper\nAxfood\n\nISIN\nSE0006993770\n\nHandelsvaluta\nSEK\n\nNamn på fond/värdepapper\nAstraZeneca\n\nISIN\nGB0009895292\n\nHandelsvaluta\nSEK\n\nNamn på fond/värdepapper\nHandelsbanken A\n\nISIN\nSE0007100599\n\nHandelsvaluta\nSEK\n\nNamn på fond/värdepapper\nHM B\n\nISIN\nSE 0000106270\n\nHandelsvaluta\nSEK\n\nNamn på fond/värdepapper\nIndustrivärden C\n\nISIN\nSE 0000 107203\n\nHandelsvaluta\nSEK\n\nNamn på fond/värdepapper\nInvestor B\n\nISIN\nSE0015811963\n\nHandelsvaluta\nSaK\n\nNamn på fond/värdepapper\nEssity B\n\nISIN\nSE0009922164\n\nHandelsvaluta\nSEK\n\nNamn på fond/värdepapper\nSCA B\n\nISIN\nSE 0000 112724\n\nHandelsvaluta\nSEK\n\nNamn på fond/värdepapper\nTele 2 B\n\nISIN\nSE 000 519 0238\n\nHandelsvaluta\nSEK\n\nNamn på fond/värdepapper\n\nISIN\n\nHandelsvaluta\n\nNamn på fond/värdepapper\n\nISIN\n\nHandelsvaluta\n\nNamn på fond/värdepapper\n\nISIN\n\nHandelsvaluta\n\nVid flytt av hela innehavet\n\n☐\nAvslut av depå.\n\nJag önskar även avsluta depå, eventuella stående överföringar och/eller autogiron hos avlämnande depåinstitut efter att alla tillgångar har\nflyttats.\n\n<!-- PageFooter: Leveransinstruktioner -->\n<!-- PageFooter: \"akr. -->\n<!-- PageBreak -->\n\n<!-- PageHeader: SÄKRA -->\n\n· Värdepapper överförs till depå 901901350081 i Swedbank. Vid frågor, kontakta backoffice.svp@profilesw.com\n\n· Likvida medel sätts in på klientmedelskonto 8327-9,944 376 044-3 i Swedbank\n\n. Fonder flyttas via Euroclear Bank SA/NV (tidigare MFEX) förutom följande fonder som flyttas direkt via von Euler & Partners: Ränteportföljen B\n(SE0022242996), Offensiva portföljen B (SE0022242988), Diskretionär Fond Tillväxt (SE0017484892), Diskretionär Fond Offensiv (SE0022574182),\nDiskretionär Fond Balanserad (SE0017484884). Vid fråga kontakta info@voneulerpartners.se\n\n· Vänligen ange kundens depånummer hos Säkra VP AB som referens\n\n· Vid frågor från avlämnande depåinstitut, vänligen kontakta affarssupport@sakra.se\n\n\n## Intygande (kund)\n\nJag är medveten om att oriktig eller ofullständig uppgift kan göra uppdraget ogiltigt samt att om värdepapper eller likvider saknas på angiven\ndepå kommer uppdraget att förfalla utan åtgärd.\n\nJag godkänner härmed detta uppdrag.\n\nOrt och datum (ÅA-MM-DD)\nÄngelholm 26-01-19\n\nUnderskrift\nTumia f\n\nNamnförtydligande\nMARIA TER:BOCUTLENNARG/CHANSSON\n\n\n### Underskrift av Säkra VP\n\nOrt och datum\nStockholm 2026-01-19\n\nUnderskrift\nAdo\n\nNamnförtydligande\nDennis Engström\n\nOrt och datum\nStockholm 2026-01-19\n\nUnderskrift\nMpur\n\nNamnförtydligande\nMats Planthaber\n\nF vtt av tillgangar 2\n\nAN IDNHE\n",
+          "fields": {
+            "AccountHolderName": {
+              "type": "string",
+              "valueString": "Stiftelsen Alfred Anderssons Familjefond",
+              "spans": [
+                {
+                  "offset": 417,
+                  "length": 40
+                }
+              ],
+              "confidence": 0.938,
+              "source": "D(1,1.1887,2.5073,4.1400,2.4972,4.1406,2.6727,1.1893,2.6829)"
+            },
+            "OrganizationNumberOrPersonalNumber": {
+              "type": "string",
+              "valueString": "839401-1251",
+              "spans": [
+                {
+                  "offset": 495,
+                  "length": 11
+                }
+              ],
+              "confidence": 0.973,
+              "source": "D(1,4.2126,2.4831,5.3062,2.4836,5.3062,2.6589,4.2126,2.6600)"
+            },
+            "TransferringInstitutionName": {
+              "type": "string",
+              "valueString": "Garantum",
+              "spans": [
+                {
+                  "offset": 593,
+                  "length": 8
+                }
+              ],
+              "confidence": 0.822,
+              "source": "D(1,1.1954,3.1632,2.0297,3.1583,2.0297,3.3277,1.1954,3.3334)"
+            },
+            "TransferringInstitutionAccountNumber": {
+              "type": "string",
+              "valueString": "917138",
+              "spans": [
+                {
+                  "offset": 642,
+                  "length": 6
+                }
+              ],
+              "confidence": 0.97,
+              "source": "D(1,4.2086,3.1367,4.8462,3.1297,4.8462,3.3064,4.2086,3.3125)"
+            },
+            "ReceivingInstitutionAccountNumber": {
+              "type": "string",
+              "valueString": "51602287",
+              "spans": [
+                {
+                  "offset": 717,
+                  "length": 8
+                }
+              ],
+              "confidence": 0.972,
+              "source": "D(1,1.1883,3.8010,2.0297,3.7962,2.0297,3.9711,1.1883,3.9728)"
+            },
+            "Assets": {
+              "type": "array",
+              "valueArray": [
+                {
+                  "type": "object",
+                  "valueObject": {
+                    "AssetName": {
+                      "type": "string",
+                      "valueString": "Aktie-Ansvar Sverige B",
+                      "spans": [
+                        {
+                          "offset": 928,
+                          "length": 22
+                        }
+                      ],
+                      "confidence": 0.585,
+                      "source": "D(1,1.1810,4.6849,3.1232,4.6818,3.1235,4.8746,1.1813,4.8778)"
+                    },
+                    "Isin": {
+                      "type": "string",
+                      "valueString": "SE0009439722",
+                      "spans": [
+                        {
+                          "offset": 957,
+                          "length": 12
+                        }
+                      ],
+                      "confidence": 0.739,
+                      "source": "D(1,4.6726,4.6651,5.9841,4.6620,5.9841,4.8404,4.6726,4.8422)"
+                    },
+                    "Currency": {
+                      "type": "string",
+                      "valueString": "SEK",
+                      "spans": [
+                        {
+                          "offset": 985,
+                          "length": 3
+                        }
+                      ],
+                      "confidence": 0.729,
+                      "source": "D(1,6.4683,4.6564,6.8556,4.6559,6.8556,4.8294,6.4683,4.8276)"
+                    }
+                  }
+                },
+                {
+                  "type": "object",
+                  "valueObject": {
+                    "AssetName": {
+                      "type": "string",
+                      "valueString": "Axfood",
+                      "spans": [
+                        {
+                          "offset": 1015,
+                          "length": 6
+                        }
+                      ],
+                      "confidence": 0.873,
+                      "source": "D(1,1.2095,5.0253,2.1083,5.0256,2.1083,5.2535,1.2095,5.2557)"
+                    },
+                    "Isin": {
+                      "type": "string",
+                      "valueString": "SE0006993770",
+                      "spans": [
+                        {
+                          "offset": 1028,
+                          "length": 12
+                        }
+                      ],
+                      "confidence": 0.829,
+                      "source": "D(1,4.7090,4.9994,6.3190,4.9921,6.3190,5.2051,4.7090,5.2098)"
+                    },
+                    "Currency": {
+                      "type": "string",
+                      "valueString": "SEK",
+                      "spans": [
+                        {
+                          "offset": 1056,
+                          "length": 3
+                        }
+                      ],
+                      "confidence": 0.757,
+                      "source": "D(1,6.5046,4.9992,6.9686,4.9975,6.9686,5.2028,6.5046,5.2011)"
+                    }
+                  }
+                },
+                {
+                  "type": "object",
+                  "valueObject": {
+                    "AssetName": {
+                      "type": "string",
+                      "valueString": "AstraZeneca",
+                      "spans": [
+                        {
+                          "offset": 1086,
+                          "length": 11
+                        }
+                      ],
+                      "confidence": 0.826,
+                      "source": "D(1,1.2196,5.3873,2.7237,5.3835,2.7237,5.6083,1.2196,5.6161)"
+                    },
+                    "Isin": {
+                      "type": "string",
+                      "valueString": "GB0009895292",
+                      "spans": [
+                        {
+                          "offset": 1104,
+                          "length": 12
+                        }
+                      ],
+                      "confidence": 0.826,
+                      "source": "D(1,4.7412,5.3443,6.3835,5.3408,6.3835,5.5668,4.7412,5.5645)"
+                    },
+                    "Currency": {
+                      "type": "string",
+                      "valueString": "SEK",
+                      "spans": [
+                        {
+                          "offset": 1132,
+                          "length": 3
+                        }
+                      ],
+                      "confidence": 0.868,
+                      "source": "D(1,6.5651,5.3625,7.1220,5.3619,7.1220,5.5640,6.5651,5.5665)"
+                    }
+                  }
+                },
+                {
+                  "type": "object",
+                  "valueObject": {
+                    "AssetName": {
+                      "type": "string",
+                      "valueString": "Handelsbanken A",
+                      "spans": [
+                        {
+                          "offset": 1162,
+                          "length": 15
+                        }
+                      ],
+                      "confidence": 0.755,
+                      "source": "D(1,1.3097,5.7093,3.5712,5.6783,3.5751,5.9602,1.3135,5.9912)"
+                    },
+                    "Isin": {
+                      "type": "string",
+                      "valueString": "SE0007100599",
+                      "spans": [
+                        {
+                          "offset": 1184,
+                          "length": 12
+                        }
+                      ],
+                      "confidence": 0.826,
+                      "source": "D(1,4.6888,5.7037,6.3755,5.6929,6.3755,5.9166,4.6888,5.9229)"
+                    },
+                    "Currency": {
+                      "type": "string",
+                      "valueString": "SEK",
+                      "spans": [
+                        {
+                          "offset": 1212,
+                          "length": 3
+                        }
+                      ],
+                      "confidence": 0.872,
+                      "source": "D(1,6.5611,5.7345,7.0937,5.7339,7.0937,5.9232,6.5611,5.9252)"
+                    }
+                  }
+                },
+                {
+                  "type": "object",
+                  "valueObject": {
+                    "AssetName": {
+                      "type": "string",
+                      "valueString": "HM B",
+                      "spans": [
+                        {
+                          "offset": 1242,
+                          "length": 4
+                        }
+                      ],
+                      "confidence": 0.873,
+                      "source": "D(1,1.2984,6.1010,2.1963,6.1131,2.1929,6.3686,1.2950,6.3565)"
+                    },
+                    "Isin": {
+                      "type": "string",
+                      "valueString": "SE 0000106270",
+                      "spans": [
+                        {
+                          "offset": 1253,
+                          "length": 13
+                        }
+                      ],
+                      "confidence": 0.818,
+                      "source": "D(1,4.6958,6.0796,6.3109,6.0709,6.3120,6.2786,4.6969,6.2873)"
+                    },
+                    "Currency": {
+                      "type": "string",
+                      "valueString": "SEK",
+                      "spans": [
+                        {
+                          "offset": 1282,
+                          "length": 3
+                        }
+                      ],
+                      "confidence": 0.83,
+                      "source": "D(1,6.5449,6.1026,7.0897,6.1026,7.0897,6.2864,6.5449,6.2870)"
+                    }
+                  }
+                },
+                {
+                  "type": "object",
+                  "valueObject": {
+                    "AssetName": {
+                      "type": "string",
+                      "valueString": "Industrivärden C",
+                      "spans": [
+                        {
+                          "offset": 1312,
+                          "length": 16
+                        }
+                      ],
+                      "confidence": 0.595,
+                      "source": "D(1,1.2876,6.4773,3.4696,6.4521,3.4722,6.6786,1.2902,6.7038)"
+                    },
+                    "Isin": {
+                      "type": "string",
+                      "valueString": "SE 0000 107203",
+                      "spans": [
+                        {
+                          "offset": 1335,
+                          "length": 14
+                        }
+                      ],
+                      "confidence": 0.8,
+                      "source": "D(1,4.7807,6.4468,6.3674,6.4403,6.3683,6.6531,4.7816,6.6596)"
+                    },
+                    "Currency": {
+                      "type": "string",
+                      "valueString": "SEK",
+                      "spans": [
+                        {
+                          "offset": 1365,
+                          "length": 3
+                        }
+                      ],
+                      "confidence": 0.866,
+                      "source": "D(1,6.5490,6.4746,7.0776,6.4667,7.0776,6.6568,6.5490,6.6560)"
+                    }
+                  }
+                },
+                {
+                  "type": "object",
+                  "valueObject": {
+                    "AssetName": {
+                      "type": "string",
+                      "valueString": "Investor B",
+                      "spans": [
+                        {
+                          "offset": 1395,
+                          "length": 10
+                        }
+                      ],
+                      "confidence": 0.722,
+                      "source": "D(1,1.3574,6.7889,3.0425,6.7504,3.0492,7.0451,1.3641,7.0837)"
+                    },
+                    "Isin": {
+                      "type": "string",
+                      "valueString": "SE0015811963",
+                      "spans": [
+                        {
+                          "offset": 1412,
+                          "length": 12
+                        }
+                      ],
+                      "confidence": 0.815,
+                      "source": "D(1,4.7574,6.7889,6.3472,6.7872,6.3472,7.0141,4.7574,7.0118)"
+                    },
+                    "Currency": {
+                      "type": "string",
+                      "valueString": "SaK",
+                      "spans": [
+                        {
+                          "offset": 1440,
+                          "length": 3
+                        }
+                      ],
+                      "confidence": 0.772,
+                      "source": "D(1,6.5288,6.8164,7.0937,6.8216,7.0937,7.0041,6.5288,6.9989)"
+                    }
+                  }
+                },
+                {
+                  "type": "object",
+                  "valueObject": {
+                    "AssetName": {
+                      "type": "string",
+                      "valueString": "Essity B",
+                      "spans": [
+                        {
+                          "offset": 1470,
+                          "length": 8
+                        }
+                      ],
+                      "confidence": 0.767,
+                      "source": "D(1,1.2730,7.2139,2.3994,7.2065,2.4009,7.4460,1.2746,7.4535)"
+                    },
+                    "Isin": {
+                      "type": "string",
+                      "valueString": "SE0009922164",
+                      "spans": [
+                        {
+                          "offset": 1485,
+                          "length": 12
+                        }
+                      ],
+                      "confidence": 0.805,
+                      "source": "D(1,4.7655,7.1793,6.4723,7.1656,6.4723,7.3910,4.7655,7.4012)"
+                    },
+                    "Currency": {
+                      "type": "string",
+                      "valueString": "SEK",
+                      "spans": [
+                        {
+                          "offset": 1513,
+                          "length": 3
+                        }
+                      ],
+                      "confidence": 0.825,
+                      "source": "D(1,6.6256,7.1920,7.1300,7.1920,7.1300,7.3966,6.6256,7.3986)"
+                    }
+                  }
+                },
+                {
+                  "type": "object",
+                  "valueObject": {
+                    "AssetName": {
+                      "type": "string",
+                      "valueString": "SCA B",
+                      "spans": [
+                        {
+                          "offset": 1543,
+                          "length": 5
+                        }
+                      ],
+                      "confidence": 0.663,
+                      "source": "D(1,1.2939,7.6030,2.2819,7.6015,2.2823,7.8468,1.2943,7.8483)"
+                    },
+                    "Isin": {
+                      "type": "string",
+                      "valueString": "SE 0000 112724",
+                      "spans": [
+                        {
+                          "offset": 1555,
+                          "length": 14
+                        }
+                      ],
+                      "confidence": 0.732,
+                      "source": "D(1,4.6886,7.5745,6.4037,7.5732,6.4039,7.7952,4.6888,7.7965)"
+                    },
+                    "Currency": {
+                      "type": "string",
+                      "valueString": "SEK",
+                      "spans": [
+                        {
+                          "offset": 1585,
+                          "length": 3
+                        }
+                      ],
+                      "confidence": 0.869,
+                      "source": "D(1,6.5409,7.5969,7.1300,7.5969,7.1300,7.7737,6.5409,7.7737)"
+                    }
+                  }
+                },
+                {
+                  "type": "object",
+                  "valueObject": {
+                    "AssetName": {
+                      "type": "string",
+                      "valueString": "Tele 2 B",
+                      "spans": [
+                        {
+                          "offset": 1615,
+                          "length": 8
+                        }
+                      ],
+                      "confidence": 0.663,
+                      "source": "D(1,1.1942,7.9591,2.5643,7.9384,2.5686,8.2232,1.1985,8.2439)"
+                    },
+                    "Isin": {
+                      "type": "string",
+                      "valueString": "SE 000 519 0238",
+                      "spans": [
+                        {
+                          "offset": 1630,
+                          "length": 15
+                        }
+                      ],
+                      "confidence": 0.647,
+                      "source": "D(1,4.7212,7.9488,6.4870,7.9695,6.4843,8.2019,4.7185,8.1812)"
+                    },
+                    "Currency": {
+                      "type": "string",
+                      "valueString": "SEK",
+                      "spans": [
+                        {
+                          "offset": 1661,
+                          "length": 3
+                        }
+                      ],
+                      "confidence": 0.832,
+                      "source": "D(1,6.6014,7.9905,7.1300,7.9905,7.1300,8.1730,6.6014,8.1730)"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "kind": "document",
+          "startPageNumber": 1,
+          "endPageNumber": 2,
+          "unit": "inch",
+          "pages": [
+            {
+              "pageNumber": 1,
+              "angle": -0.0458,
+              "width": 8.2639,
+              "height": 11.6806
+            },
+            {
+              "pageNumber": 2,
+              "angle": -0.2157,
+              "width": 8.2639,
+              "height": 11.6806
+            }
+          ],
+          "analyzerId": "custompdfreader2",
+          "mimeType": "application/pdf"
+        }
+      ]
+    },
+    "usage": {
+      "documentPagesStandard": 2,
+      "contextualizationTokens": 2000,
+      "tokens": {
+        "gpt-4.1-input": 6222,
+        "gpt-4.1-output": 1224
+      }
+    }
+  }
