@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.venv/
+venv/
+env/
+
+# Azure Functions
+local.settings.json
+.python_packages/
+.funcignore
+
+# IDE
+.vscode/
+.idea/
+
+# Test files
+files/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Base64 test files
+*.b64
