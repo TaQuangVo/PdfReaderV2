@@ -1,3 +1,4 @@
+import os
 from utils.allowed_isins_list import ALLOWED_ISINS
 from utils.special_isins import SPECIAL_ISINS
 from utils.outcome_email_template import OUTCOME_EMAIL_TEMPLATE
@@ -22,12 +23,15 @@ def FindIsinFromList(isin: str, valuta: str|None, list_to_match) -> bool:
 
 def Decide_output(isins, depoInst):
 
+    skip_validation = os.environ.get("SKIP_ISIN_VALIDATION", "false").lower() == "true"
+
     # Validate ISINs
     invalid_isins = []
-    for isin in isins:
-        if not FindIsinFromList(isin['isin'], isin.get('valuta'), ALLOWED_ISINS):
-            invalid_isins.append(isin)
-    
+    if not skip_validation:
+        for isin in isins:
+            if not FindIsinFromList(isin['isin'], isin.get('valuta'), ALLOWED_ISINS):
+                invalid_isins.append(isin)
+
     is_valid = len(invalid_isins) == 0
 
     if len(isins) == 0 or depoInst is None:
