@@ -21,6 +21,14 @@ def FindIsinFromList(isin: str, valuta: str|None, list_to_match) -> bool:
                 return True
     return False
 
+def Build_message(base_message, isins, depoInst):
+    isin_lines = "\n".join(
+        f"- {i['isin']}" + (f" ({i['valuta']})" if i.get('valuta') else "")
+        for i in isins
+    )
+    parts = [base_message, f"Depåinstitut: {depoInst}" if depoInst else "", isin_lines]
+    return "\n".join(p for p in parts if p)
+
 def Decide_output(isins, depoInst):
 
     skip_validation = os.environ.get("SKIP_ISIN_VALIDATION", "false").lower() == "true"
@@ -35,23 +43,25 @@ def Decide_output(isins, depoInst):
     is_valid = len(invalid_isins) == 0
 
     if len(isins) == 0 or depoInst is None:
+        template = OUTCOME_EMAIL_TEMPLATE["AS_tom"]
         return {
             "found_isins": isins,
             "depo_inst": depoInst,
             "is_valid": is_valid,
             "invalid_isin_list": invalid_isins,
-            "email": OUTCOME_EMAIL_TEMPLATE["AS_tom"]
+            "email": {**template, "message": Build_message(template["message"], isins, depoInst)}
         }
 
 
     # Send to AS
     if not is_valid and depoInst == "Strivo":
+        template = OUTCOME_EMAIL_TEMPLATE["AS_ej_godkand"]
         return {
             "found_isins": isins,
             "depo_inst": depoInst,
             "is_valid": is_valid,
             "invalid_isin_list": invalid_isins,
-            "email": OUTCOME_EMAIL_TEMPLATE["AS_ej_godkand"]
+            "email": {**template, "message": Build_message(template["message"], isins, depoInst)}
         }
 
     specialIsinsFound = []
@@ -64,9 +74,10 @@ def Decide_output(isins, depoInst):
         email_key = f"{depoInst.lower()}_special"
     else:
         email_key = f"{depoInst.lower()}_fund"
-    
+
+    template = OUTCOME_EMAIL_TEMPLATE[email_key]
     return {
             "found_isins": isins,
             "depo_inst": depoInst,
-            "email": OUTCOME_EMAIL_TEMPLATE[email_key]
+            "email": {**template, "message": Build_message(template["message"], isins, depoInst)}
         }
