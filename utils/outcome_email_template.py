@@ -1,17 +1,23 @@
-garantum_mail = ""
-AS_mail = ""
-strivo_mail = ""
-nordnet_mail = ""
-mfex_mail = ""
-fg_mail = ""
+garantum_mail = "garantum_testmail"
+AS_mail = "AS_testmail"
+strivo_mail = "Strivo_testmail"
+nordnet_mail = "Nordnet_testmail"
+mfex_mail = "MFEX_testmail"
+fg_mail = "FG_testmail"
 test_mail = "daniel.karoumi@sakra.se"
 
 OUTCOME_EMAIL_TEMPLATE = {
-    "AS_tom": {
-        "template_name": "AS_tom",
-        "message": "Tom flyttblanket. Inga värdepapper hittades. Manuell granskning krävs.",
-        "email_to": AS_mail+";"+test_mail, # send to AS and test mail
-        "subject": "Tom flyttblanket"
+    "AS_tom_inga_isins": {
+        "template_name": "AS_tom_inga_isins",
+        "message": "Inga värdepapper hittades i blanketten. Manuell granskning krävs.",
+        "email_to": AS_mail+";"+test_mail,
+        "subject": "Inkorrekt flyttblanket"
+    },
+    "AS_tom_ingen_depo": {
+        "template_name": "AS_tom_ingen_depo",
+        "message": "Depåinstitut saknas eller kunde inte identifieras. Manuell granskning krävs.",
+        "email_to": AS_mail+";"+test_mail,
+        "subject": "Inkorrekt flyttblanket"
     },
     "AS_ej_godkand": {
         "template_name": "AS_ej_godkand",

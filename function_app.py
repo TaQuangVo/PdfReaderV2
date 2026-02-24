@@ -1,6 +1,7 @@
 import azure.functions as func
 import logging
 import json
+import re
 
 from utils.extract_fund_from_CU_result import extractFundFromCUResult
 from utils.extract_fund_from_pdf import extractFundFromPdf
@@ -29,7 +30,16 @@ def validate_isins(req: func.HttpRequest) -> func.HttpResponse:
         depoInst = result["depoInst"]
 
         output = Decide_output(isins, depoInst)
-        
+
+        depanr = None
+        email_body = req.params.get("email_body")
+        if email_body:
+            match = re.search(r'Dep[åa]nr[:\s]*(\S+)', email_body, re.IGNORECASE)
+            if match:
+                depanr = match.group(1)
+        if depanr:
+            output["email"]["subject"] = f"{output['email']['subject']} - {depanr}"
+
         return func.HttpResponse(
             body=json.dumps(output),
             status_code=200,

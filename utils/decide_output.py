@@ -43,7 +43,8 @@ def Decide_output(isins, depoInst):
     is_valid = len(invalid_isins) == 0
 
     if len(isins) == 0 or depoInst is None:
-        template = OUTCOME_EMAIL_TEMPLATE["AS_tom"]
+        template_key = "AS_tom_inga_isins" if len(isins) == 0 else "AS_tom_ingen_depo"
+        template = OUTCOME_EMAIL_TEMPLATE[template_key]
         return {
             "found_isins": isins,
             "depo_inst": depoInst,
