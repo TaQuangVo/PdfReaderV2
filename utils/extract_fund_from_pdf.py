@@ -1,5 +1,6 @@
 from PyPDF2 import PdfReader
 import re
+import logging
 
 ISIN_RE = re.compile(r"\b[A-Z]{2}[A-Z0-9]{9}[0-9]\b")
 
@@ -23,6 +24,8 @@ def extractFundFromPdf(file):
     text = ""
     for page in reader.pages:
         text += page.extract_text() + "\n"
+
+    # logging.info(f"Extracted PDF text:\n{text}")
 
     # Regex pattern:
     # - Fund name: greedy text until ISIN
@@ -49,7 +52,7 @@ def extractFundFromPdf(file):
         })
 
     depInst = re.search(r'(?m)^\s*(?:Strivo|Nordnet|Garantum)\s*$', text)
-    depInst = depInst.group(0) if depInst else None
+    depInst = depInst.group(0).strip() if depInst else None
 
 
     return {
