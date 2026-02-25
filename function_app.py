@@ -33,12 +33,19 @@ def validate_isins(req: func.HttpRequest) -> func.HttpResponse:
 
         depanr = None
         email_body = req.params.get("email_body")
+        logging.info(f"email_body received: {repr(email_body)}")
         if email_body:
-            match = re.search(r'Dep[åa]nr[:\s]*(\S+)', email_body, re.IGNORECASE)
+            match = re.search(r'Dep[åa]nr[:\s]*([\w\d]+)', email_body, re.IGNORECASE)
+            logging.info(f"depanr regex match: {match}")
             if match:
                 depanr = match.group(1)
+        parts = ["Fondflytt"]
+        if depoInst:
+            parts.append(depoInst)
         if depanr:
-            output["email"]["subject"] = f"{output['email']['subject']} - {depanr}"
+            parts.append(depanr)
+        output["email"]["subject"] = " ".join(parts)
+        output["filename"] = " ".join(parts) + ".pdf"
 
         return func.HttpResponse(
             body=json.dumps(output),
