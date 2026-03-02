@@ -22,12 +22,12 @@ def FindIsinFromList(isin: str, valuta: str|None, list_to_match) -> bool:
     return False
 
 def Build_message(base_message, isins, depoInst):
-    isin_lines = "\n".join(
+    isin_lines = "<br>".join(
         f"- {i['isin']}" + (f" ({i['valuta']})" if i.get('valuta') else "")
         for i in isins
     )
     parts = [base_message, f"Depåinstitut: {depoInst}" if depoInst else "", isin_lines]
-    return "\n".join(p for p in parts if p)
+    return "<br>".join(p for p in parts if p)
 
 def Decide_output(isins, depoInst):
 
