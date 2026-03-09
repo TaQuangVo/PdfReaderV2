@@ -5,7 +5,8 @@ import re
 
 from utils.extract_fund_from_CU_result import extractFundFromCUResult
 from utils.extract_fund_from_pdf import extractFundFromPdf
-from utils.decide_output import Decide_output
+from utils.decide_output import Decide_output, Build_message
+from utils.outcome_email_template import OUTCOME_EMAIL_TEMPLATE
 from utils.pdf_stream_from_request import Get_pdf_stream_from_resquest
 
 app = func.FunctionApp(http_auth_level=func.AuthLevel.FUNCTION)
@@ -39,6 +40,10 @@ def validate_isins(req: func.HttpRequest) -> func.HttpResponse:
             logging.info(f"depanr regex match: {match}")
             if match:
                 depanr = match.group(1)
+        if depanr is None:
+            template = OUTCOME_EMAIL_TEMPLATE["AS_tom_info_saknas"]
+            output["email"] = {**template, "message": Build_message(template["message"], isins, depoInst)}
+
         parts = ["Fondflytt"]
         if depoInst:
             parts.append(depoInst)

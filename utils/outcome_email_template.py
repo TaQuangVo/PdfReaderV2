@@ -21,9 +21,9 @@ OUTCOME_EMAIL_TEMPLATE = {
         "message": "Inga värdepapper hittades i blanketten. Manuell granskning krävs.",
         "email_to": AS_mail+";"+test_mail,
     },
-    "AS_tom_ingen_depo": {
-        "template_name": "AS_tom_ingen_depo",
-        "message": "Depåinstitut saknas eller kunde inte identifieras. Manuell granskning krävs.",
+    "AS_tom_info_saknas": {
+        "template_name": "AS_tom_info_saknas",
+        "message": "Nödvändig information (depåinstitut eller depånummer) saknas eller kunde inte identifieras. Manuell granskning krävs.",
         "email_to": AS_mail+";"+test_mail,
     },
     "AS_ej_godkand": {
